@@ -4,13 +4,13 @@
 
 ## Table of contents
 
-### API Properties
+### Properties
 
 - [headers](FHIRRequestObj.md#headers)
 - [method](FHIRRequestObj.md#method)
 - [url](FHIRRequestObj.md#url)
 
-## API Properties
+## Properties
 
 ### headers
 

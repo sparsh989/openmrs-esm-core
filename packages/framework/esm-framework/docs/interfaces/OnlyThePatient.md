@@ -10,11 +10,11 @@
 
 ## Table of contents
 
-### API Properties
+### Properties
 
 - [includeConfig](OnlyThePatient.md#includeconfig)
 
-## API Properties
+## Properties
 
 ### includeConfig
 

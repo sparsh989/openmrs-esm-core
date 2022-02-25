@@ -10,11 +10,11 @@
 
 ## Table of contents
 
-### API Properties
+### Properties
 
 - [includeConfig](PatientWithFullResponse.md#includeconfig)
 
-## API Properties
+## Properties
 
 ### includeConfig
 

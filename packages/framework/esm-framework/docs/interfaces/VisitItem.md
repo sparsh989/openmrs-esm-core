@@ -4,14 +4,14 @@
 
 ## Table of contents
 
-### API Properties
+### Properties
 
 - [anythingElse](VisitItem.md#anythingelse)
 - [mode](VisitItem.md#mode)
 - [status](VisitItem.md#status)
 - [visitData](VisitItem.md#visitdata)
 
-## API Properties
+## Properties
 
 ### anythingElse
 

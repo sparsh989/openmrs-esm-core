@@ -4,13 +4,13 @@
 
 ## Table of contents
 
-### API Enumeration members
+### Enumeration members
 
 - [EDITVISIT](VisitMode.md#editvisit)
 - [LOADING](VisitMode.md#loading)
 - [NEWVISIT](VisitMode.md#newvisit)
 
-## API Enumeration members
+## Enumeration members
 
 ### EDITVISIT
 

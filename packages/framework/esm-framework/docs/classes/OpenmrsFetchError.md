@@ -10,19 +10,16 @@
 
 ## Table of contents
 
-### API Constructors
+### Constructors
 
 - [constructor](OpenmrsFetchError.md#constructor)
 
-### API Properties
-
-- [response](OpenmrsFetchError.md#response)
-- [responseBody](OpenmrsFetchError.md#responsebody)
-
-### Other Properties
+### Properties
 
 - [message](OpenmrsFetchError.md#message)
 - [name](OpenmrsFetchError.md#name)
+- [response](OpenmrsFetchError.md#response)
+- [responseBody](OpenmrsFetchError.md#responsebody)
 - [stack](OpenmrsFetchError.md#stack)
 - [prepareStackTrace](OpenmrsFetchError.md#preparestacktrace)
 - [stackTraceLimit](OpenmrsFetchError.md#stacktracelimit)
@@ -31,7 +28,7 @@
 
 - [captureStackTrace](OpenmrsFetchError.md#capturestacktrace)
 
-## API Constructors
+## Constructors
 
 ### constructor
 
@@ -54,29 +51,7 @@ Error.constructor
 
 [packages/framework/esm-api/src/openmrs-fetch.ts:275](https://github.com/openmrs/openmrs-esm-core/blob/master/packages/framework/esm-api/src/openmrs-fetch.ts#L275)
 
-## API Properties
-
-### response
-
-• **response**: `Response`
-
-#### Defined in
-
-[packages/framework/esm-api/src/openmrs-fetch.ts:288](https://github.com/openmrs/openmrs-esm-core/blob/master/packages/framework/esm-api/src/openmrs-fetch.ts#L288)
-
-___
-
-### responseBody
-
-• **responseBody**: ``null`` \| `string` \| `FetchResponseJson`
-
-#### Defined in
-
-[packages/framework/esm-api/src/openmrs-fetch.ts:289](https://github.com/openmrs/openmrs-esm-core/blob/master/packages/framework/esm-api/src/openmrs-fetch.ts#L289)
-
-___
-
-## Other Properties
+## Properties
 
 ### message
 
@@ -103,6 +78,26 @@ Error.name
 #### Defined in
 
 node_modules/typescript/lib/lib.es5.d.ts:1022
+
+___
+
+### response
+
+• **response**: `Response`
+
+#### Defined in
+
+[packages/framework/esm-api/src/openmrs-fetch.ts:288](https://github.com/openmrs/openmrs-esm-core/blob/master/packages/framework/esm-api/src/openmrs-fetch.ts#L288)
+
+___
+
+### responseBody
+
+• **responseBody**: ``null`` \| `string` \| `FetchResponseJson`
+
+#### Defined in
+
+[packages/framework/esm-api/src/openmrs-fetch.ts:289](https://github.com/openmrs/openmrs-esm-core/blob/master/packages/framework/esm-api/src/openmrs-fetch.ts#L289)
 
 ___
 
