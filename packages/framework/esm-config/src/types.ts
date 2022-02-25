@@ -6,6 +6,7 @@ export enum Type {
   Object = "Object",
   String = "String",
   UUID = "UUID",
+  PersonAttributeTypeUuid = "PersonAttributeTypeUuid",
 }
 
 // Full-powered typing for Config and Schema trees depends on being able to
@@ -47,8 +48,11 @@ export interface ExtensionSlotConfigureValueObject {
 }
 
 export interface ExtensionSlotConfigObject {
+  /** Additional extension IDs to assign to this slot, in addition to those `attach`ed in code. */
   add?: Array<string>;
+  /** Extension IDs which were `attach`ed to the slot but which should not be assigned. */
   remove?: Array<string>;
+  /** Overrides the default ordering of extensions. */
   order?: Array<string>;
 }
 
