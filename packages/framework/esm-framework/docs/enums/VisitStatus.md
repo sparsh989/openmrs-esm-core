@@ -4,12 +4,12 @@
 
 ## Table of contents
 
-### Enumeration members
+### API Enumeration members
 
 - [NOTSTARTED](VisitStatus.md#notstarted)
 - [ONGOING](VisitStatus.md#ongoing)
 
-## Enumeration members
+## API Enumeration members
 
 ### NOTSTARTED
 

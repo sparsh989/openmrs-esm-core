@@ -12,11 +12,11 @@
 
 ## Table of contents
 
-### Properties
+### API Properties
 
 - [includeConfig](CurrentPatientOptions.md#includeconfig)
 
-## Properties
+## API Properties
 
 ### includeConfig
 
