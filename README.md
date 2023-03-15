@@ -19,7 +19,7 @@ This is a [monorepo](https://classic.yarnpkg.com/lang/en/docs/workspaces/) conta
 
 ### Application
 
-This contains tooling and the app shell.
+This contains the developer tooling and the app shell.
 
 - [openmrs](packages/tooling/openmrs)
 - [@openmrs/esm-app-shell](packages/shell/esm-app-shell)
