@@ -117,18 +117,6 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
     return chooseLocation.numberToShow;
   });
 
-  // Handle cases where the location picker is disabled, there is only one location, or there are no locations.
-  useEffect(() => {
-    if (!isLoading) {
-      if (!config.chooseLocation.enabled || locations?.length === 1) {
-        changeLocation(locations[0]?.resource.id);
-      }
-      if (!isLoading && !locations?.length) {
-        changeLocation();
-      }
-    }
-  }, [config.chooseLocation.enabled, isLoading, locations, changeLocation]);
-
   const search = debounce((location: string) => {
     setActiveLocation("");
     setSearchTerm(location);
@@ -200,11 +188,23 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
                   className={styles.radioButtonSkeleton}
                   role="progressbar"
                 />
+                <RadioButtonSkeleton
+                  className={styles.radioButtonSkeleton}
+                  role="progressbar"
+                />{" "}
+                <RadioButtonSkeleton
+                  className={styles.radioButtonSkeleton}
+                  role="progressbar"
+                />{" "}
+                <RadioButtonSkeleton
+                  className={styles.radioButtonSkeleton}
+                  role="progressbar"
+                />
               </div>
             ) : (
               <>
                 <div className={styles.locationResultsContainer}>
-                  {locations?.length && (
+                  {locations?.length ? (
                     <RadioButtonGroup
                       valueSelected={activeLocation}
                       orientation="vertical"
@@ -223,7 +223,7 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
                         />
                       ))}
                     </RadioButtonGroup>
-                  )}
+                  ) : null}
                   {locations?.length === 0 && (
                     <div className={styles.emptyState}>
                       <p className={styles.locationNotFound}>
