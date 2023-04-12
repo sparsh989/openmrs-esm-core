@@ -39,6 +39,6 @@
     "@openmrs/esm-globals": "4.x"
   },
   "devDependencies": {
-    "@openmrs/esm-globals": "^4.3.0"
+    "@openmrs/esm-globals": "^4.3.1"
   }
 }

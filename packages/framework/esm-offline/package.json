@@ -36,10 +36,10 @@
     "access": "public"
   },
   "devDependencies": {
-    "@openmrs/esm-api": "^4.3.0",
-    "@openmrs/esm-globals": "^4.3.0",
-    "@openmrs/esm-state": "^4.3.0",
-    "@openmrs/esm-styleguide": "^4.3.0",
+    "@openmrs/esm-api": "^4.3.1",
+    "@openmrs/esm-globals": "^4.3.1",
+    "@openmrs/esm-state": "^4.3.1",
+    "@openmrs/esm-styleguide": "^4.3.1",
     "@types/uuid": "^9.0.1",
     "rxjs": "^6.5.3"
   },

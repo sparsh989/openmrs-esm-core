@@ -42,6 +42,6 @@
     "@openmrs/esm-state": "4.x"
   },
   "devDependencies": {
-    "@openmrs/esm-state": "^4.3.0"
+    "@openmrs/esm-state": "^4.3.1"
   }
 }

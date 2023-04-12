@@ -55,11 +55,11 @@
     "react-i18next": "11.x"
   },
   "devDependencies": {
-    "@openmrs/esm-api": "^4.3.0",
-    "@openmrs/esm-config": "^4.3.0",
-    "@openmrs/esm-error-handling": "^4.3.0",
-    "@openmrs/esm-extensions": "^4.3.0",
-    "@openmrs/esm-globals": "^4.3.0",
+    "@openmrs/esm-api": "^4.3.1",
+    "@openmrs/esm-config": "^4.3.1",
+    "@openmrs/esm-error-handling": "^4.3.1",
+    "@openmrs/esm-extensions": "^4.3.1",
+    "@openmrs/esm-globals": "^4.3.1",
     "dayjs": "^1.10.8",
     "i18next": "^19.6.0",
     "react": "^18.1.0",
