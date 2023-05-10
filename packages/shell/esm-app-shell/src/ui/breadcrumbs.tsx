@@ -33,7 +33,7 @@ function getParams(path: string, matcher: RegExp) {
 interface CustomBreadcrumbItemProps {
   breadcrumbRegistration: BreadcrumbRegistration;
   params: any;
-  t: (string) => string;
+  t?: (string) => string;
 }
 
 export const CustomBreadcrumbItem: React.FC<CustomBreadcrumbItemProps> = ({

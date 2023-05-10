@@ -27,6 +27,7 @@ export function unsetLeftNav(name) {
 
 interface LeftNavMenuProps extends SideNavProps {
   t?: (x: string) => string;
+  isChildOfHeader: boolean;
 }
 
 export const LeftNavMenu = React.forwardRef<HTMLElement, LeftNavMenuProps>(

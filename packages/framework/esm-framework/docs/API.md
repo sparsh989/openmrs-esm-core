@@ -743,11 +743,11 @@ ___
 
 ### LeftNavMenu
 
-• `Const` **LeftNavMenu**: `ForwardRefExoticComponent`<`Pick`<`SideNavProps`, `string` \| `number` \| `symbol`\> & `RefAttributes`<`HTMLElement`\>\>
+• `Const` **LeftNavMenu**: `ForwardRefExoticComponent`<`LeftNavMenuProps` & `RefAttributes`<`HTMLElement`\>\>
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/left-nav/index.tsx:30](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/left-nav/index.tsx#L30)
+[packages/framework/esm-styleguide/src/left-nav/index.tsx:32](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/left-nav/index.tsx#L32)
 
 ## API Functions
 
