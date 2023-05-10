@@ -25,7 +25,9 @@ export function unsetLeftNav(name) {
   }
 }
 
-type LeftNavMenuProps = SideNavProps;
+interface LeftNavMenuProps extends SideNavProps {
+  t?: (x: string) => string;
+}
 
 export const LeftNavMenu = React.forwardRef<HTMLElement, LeftNavMenuProps>(
   (props, ref) => {
@@ -42,7 +44,10 @@ export const LeftNavMenu = React.forwardRef<HTMLElement, LeftNavMenuProps>(
       >
         <ExtensionSlot name="global-nav-menu-slot" />
         {slotName ? (
-          <ExtensionSlot name={slotName} state={{ basePath, currentPath }} />
+          <ExtensionSlot
+            name={slotName}
+            state={{ basePath, currentPath, t: props?.t }}
+          />
         ) : null}
       </SideNav>
     );

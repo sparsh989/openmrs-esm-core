@@ -33,18 +33,20 @@ function getParams(path: string, matcher: RegExp) {
 interface CustomBreadcrumbItemProps {
   breadcrumbRegistration: BreadcrumbRegistration;
   params: any;
+  t: (string) => string;
 }
 
 export const CustomBreadcrumbItem: React.FC<CustomBreadcrumbItemProps> = ({
   breadcrumbRegistration,
   params,
+  t,
 }) => {
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState<string>("");
 
   useEffect(() => {
     if (typeof breadcrumbRegistration.settings.title === "function") {
       Promise.resolve(breadcrumbRegistration.settings.title(params)).then(
-        (res) => setTitle(res)
+        (res: string) => setTitle(res)
       );
     } else {
       setTitle(breadcrumbRegistration.settings.title);
@@ -56,13 +58,21 @@ export const CustomBreadcrumbItem: React.FC<CustomBreadcrumbItemProps> = ({
       <ConfigurableLink
         to={getPath(breadcrumbRegistration.settings.path, params)}
       >
-        {title ? title : <InlineLoading />}
+        {title ? (
+          t && typeof t === "function" ? (
+            t(title)
+          ) : (
+            title
+          )
+        ) : (
+          <InlineLoading />
+        )}
       </ConfigurableLink>
     </BreadcrumbItem>
   );
 };
 
-export const Breadcrumbs: React.FC = () => {
+export const Breadcrumbs: React.FC<{ t: any }> = ({ t }) => {
   const [path, setPath] = useState(location.pathname);
   const breadcrumbs = getBreadcrumbsFor(path);
   const currentBc = breadcrumbs[breadcrumbs.length - 1];
@@ -91,6 +101,7 @@ export const Breadcrumbs: React.FC = () => {
           key={`breadcrumb-item-${index}`}
           breadcrumbRegistration={bc}
           params={params}
+          t={t}
         />
       ))}
     </Breadcrumb>
