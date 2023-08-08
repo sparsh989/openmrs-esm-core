@@ -9,11 +9,7 @@
         "paths": [
           {
             "name": "lodash",
-            "message": "Import specific methods from `lodash-es`. e.g. `import map from 'lodash-es/map'`"
-          },
-          {
-            "name": "lodash-es",
-            "message": "Import specific methods from `lodash-es`. e.g. `import map from 'lodash-es/map'`"
+            "message": "Import specific methods from `lodash-es`. e.g. `import map from 'lodashs/map'`"
           }
         ],
         "patterns": [

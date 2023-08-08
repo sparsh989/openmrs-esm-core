@@ -8,8 +8,7 @@ import React, {
   type ReactElement,
 } from "react";
 import type { Parcel } from "single-spa";
-import { ComponentContext } from ".";
-import type { ExtensionData } from "./ComponentContext";
+import { ComponentContext, type ExtensionData } from "./ComponentContext";
 
 export type ExtensionProps = {
   state?: Record<string, any>;

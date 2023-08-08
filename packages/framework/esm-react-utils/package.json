@@ -3,14 +3,14 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "React utilities for OpenMRS.",
-  "browser": "dist/openmrs-esm-react-utils.js",
-  "main": "src/index.ts",
+  "module": "dist/openmrs-esm-react-utils.js",
+  "types": "dist/index.d.ts",
   "source": true,
   "scripts": {
     "test": "jest --passWithNoTests",
-    "build": "webpack --mode=production",
-    "build:development": "webpack --mode development",
-    "analyze": "webpack --mode=production --env analyze=true",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "build:development": "rollup -c",
+    "analyze": "rollup -c --environment NODE_ENV:production,ANALYZE:true",
     "lint": "eslint src"
   },
   "keywords": [
@@ -46,6 +46,7 @@
   "peerDependencies": {
     "@openmrs/esm-api": "5.x",
     "@openmrs/esm-config": "5.x",
+    "@openmrs/esm-emr-api": "5.x",
     "@openmrs/esm-error-handling": "5.x",
     "@openmrs/esm-extensions": "5.x",
     "@openmrs/esm-globals": "5.x",
@@ -58,6 +59,7 @@
   "devDependencies": {
     "@openmrs/esm-api": "^5.1.0",
     "@openmrs/esm-config": "^5.1.0",
+    "@openmrs/esm-emr-api": "^5.1.0",
     "@openmrs/esm-error-handling": "^5.1.0",
     "@openmrs/esm-extensions": "^5.1.0",
     "@openmrs/esm-feature-flags": "^5.1.0",
@@ -67,7 +69,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-i18next": "^11.16.9",
-    "rxjs": "^6.5.3",
-    "webpack": "^5.88.0"
+    "rollup": "^3.27.2",
+    "rxjs": "^6.5.3"
   }
 }

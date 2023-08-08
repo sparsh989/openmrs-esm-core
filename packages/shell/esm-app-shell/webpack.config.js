@@ -212,7 +212,7 @@ module.exports = (env, argv = {}) => {
       static: ["src/assets"],
     },
     mode,
-    devtool: isProd ? "hidden-nosources-source-map" : "eval-source-map",
+    devtool: isProd ? "hidden-nosources-source-map" : "source-map",
     module: {
       rules: [
         {
@@ -265,6 +265,9 @@ module.exports = (env, argv = {}) => {
         https: false,
         zlib: false,
         url: false,
+      },
+      alias: {
+        "@openmrs/esm-framework": "@openmrs/esm-framework/src/internal",
       },
     },
     plugins: [

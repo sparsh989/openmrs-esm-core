@@ -3,16 +3,16 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "The styleguide for OpenMRS SPA",
-  "browser": "dist/openmrs-esm-styleguide.js",
-  "main": "src/index.ts",
+  "module": "dist/openmrs-esm-styleguide.js",
+  "types": "dist/index.d.ts",
   "source": true,
   "scripts": {
     "test": "jest --config jest.config.js --passWithNoTests",
     "start:storybook": "start-storybook --port 7000",
     "build:storybook": "build-storybook",
-    "build": "webpack --mode=production",
-    "build:development": "webpack --mode development",
-    "analyze": "webpack --mode=production --env analyze=true",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "build:development": "rollup -c",
+    "analyze": "rollup -c --environment NODE_ENV:production,ANALYZE:true",
     "lint": "eslint src"
   },
   "keywords": [
@@ -48,6 +48,7 @@
     "@openmrs/esm-extensions": "5.x",
     "@openmrs/esm-react-utils": "5.x",
     "@openmrs/esm-state": "5.x",
+    "i18next": "19.x",
     "react": "18.x",
     "react-dom": "18.x",
     "rxjs": "6.x"
@@ -56,14 +57,16 @@
     "@openmrs/esm-extensions": "^5.1.0",
     "@openmrs/esm-react-utils": "^5.1.0",
     "@openmrs/esm-state": "^5.1.0",
+    "@rollup/plugin-image": "^3.0.2",
     "autoprefixer": "^9.8.8",
-    "css-minimizer-webpack-plugin": "^1.2.0",
     "i18next": "^19.6.0",
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
     "postcss": "^8.4.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "rollup": "^3.27.2",
+    "rollup-plugin-postcss": "^4.0.2",
     "rxjs": "^6.5.3"
   }
 }

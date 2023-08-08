@@ -1,9 +1,15 @@
 /** @module @category UI */
-import React from "react";
+import React, {
+  type ComponentProps,
+  type FocusEvent,
+  type KeyboardEvent,
+  type MouseEventHandler,
+} from "react";
+import type {} from "@openmrs/esm-globals";
 import { ExtensionSlot, useStore } from "@openmrs/esm-react-utils";
 import { createGlobalStore } from "@openmrs/esm-state";
-import { SideNav, SideNavProps } from "@carbon/react";
-import styles from "./left-nav.module.scss";
+import { SideNav, type SideNavProps } from "@carbon/react";
+import * as styles from "./left-nav.module.scss";
 
 interface LeftNavStore {
   slotName: string | null;
@@ -25,7 +31,26 @@ export function unsetLeftNav(name) {
   }
 }
 
-type LeftNavMenuProps = SideNavProps;
+// FIXME This should be taken from @carbon/react directly
+export type LeftNavMenuProps = ComponentProps<"nav"> & {
+  expanded?: boolean | undefined;
+  defaultExpanded?: boolean | undefined;
+  isChildOfHeader?: boolean | undefined;
+  onToggle?: (
+    event: FocusEvent<HTMLElement> | KeyboardEvent<HTMLElement> | boolean,
+    value: boolean
+  ) => void | undefined;
+  href?: string | undefined;
+  isFixedNav?: boolean | undefined;
+  isRail?: boolean | undefined;
+  isPersistent?: boolean | undefined;
+  addFocusListeners?: boolean | undefined;
+  addMouseListeners?: boolean | undefined;
+  onOverlayClick?: MouseEventHandler<HTMLDivElement> | undefined;
+  onSideNavBlur?: () => void | undefined;
+  enterDelayMs?: number;
+  inert?: boolean;
+};
 
 export const LeftNavMenu = React.forwardRef<HTMLElement, LeftNavMenuProps>(
   (props, ref) => {

@@ -8,11 +8,15 @@
  * - connected (computed from assigned using connectivity and online / offline)
  */
 
-import { getSessionStore, LoggedInUser, userHasAccess } from "@openmrs/esm-api";
 import {
-  ExtensionsConfigStore,
-  ExtensionSlotConfigObject,
-  ExtensionSlotsConfigStore,
+  getSessionStore,
+  type LoggedInUser,
+  userHasAccess,
+} from "@openmrs/esm-api";
+import {
+  type ExtensionsConfigStore,
+  type ExtensionSlotConfigObject,
+  type ExtensionSlotsConfigStore,
   getExtensionConfigFromStore,
   getExtensionsConfigStore,
   getExtensionSlotConfig,
@@ -20,22 +24,19 @@ import {
   getExtensionSlotsConfigStore,
 } from "@openmrs/esm-config";
 import { featureFlagsStore } from "@openmrs/esm-feature-flags";
-import isEqual from "lodash-es/isEqual";
-import isUndefined from "lodash-es/isUndefined";
+import { isEqual, isUndefined } from "lodash-es";
 import {
-  getExtensionInternalStore,
-  ExtensionSlotState,
-  AssignedExtension,
-  checkStatusFor,
-  ConnectedExtension,
-} from ".";
-import {
-  ExtensionRegistration,
-  ExtensionSlotInfo,
-  ExtensionInternalStore,
+  type AssignedExtension,
+  type ConnectedExtension,
+  type ExtensionRegistration,
+  type ExtensionSlotState,
+  type ExtensionSlotInfo,
+  type ExtensionInternalStore,
   getExtensionStore,
+  getExtensionInternalStore,
   updateInternalExtensionStore,
 } from "./store";
+import { checkStatusFor } from "./helpers";
 
 const extensionInternalStore = getExtensionInternalStore();
 const extensionStore = getExtensionStore();

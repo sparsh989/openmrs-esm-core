@@ -2,12 +2,12 @@
 import {
   defaultVisitCustomRepresentation,
   getVisitStore,
-  openmrsFetch,
-  Visit,
-} from "@openmrs/esm-api";
+  type Visit,
+} from "@openmrs/esm-emr-api";
+import { openmrsFetch } from "@openmrs/esm-api";
 import useSWR from "swr";
-import dayjs from "dayjs";
-import isToday from "dayjs/plugin/isToday";
+import dayjs from "dayjs/esm";
+import isToday from "dayjs/esm/plugin/isToday";
 import { useMemo } from "react";
 import { useStore } from "./useStore";
 

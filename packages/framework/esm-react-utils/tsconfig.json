@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "declaration": true,
     "declarationDir": "dist",
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "lib": [
       "dom",
       "es5",
@@ -18,9 +18,9 @@
       "es2015.promise",
       "es2016.array.include",
       "es2018",
-      "ESNext"
+      "esnext"
     ]
   },
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.test.*"]
+  "exclude": ["**/*.test.ts", "**/*.test.tsx"]
 }

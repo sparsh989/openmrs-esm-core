@@ -3,7 +3,7 @@ import {
   toDateObjectStrict,
   isOmrsDateStrict,
 } from "./omrs-dates";
-import dayjs from "dayjs";
+import dayjs from "dayjs/esm";
 import timezoneMock from "timezone-mock";
 import { formatDate, formatDatetime, formatTime } from ".";
 import { i18n } from "i18next";

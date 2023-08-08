@@ -2,7 +2,7 @@ module.exports = {
   transform: {
     "^.+\\.(j|t)sx?$": ["@swc/jest"],
   },
-  setupFilesAfterEnv: ["<rootDir>/src/setup-tests.js"],
+  setupFilesAfterEnv: ["<rootDir>/setup-tests.js"],
   moduleNameMapper: {
     "^lodash-es/(.*)$": "lodash/$1",
     "@openmrs/esm-error-handling":

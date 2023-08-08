@@ -3,9 +3,9 @@
  * @category Date and Time
  */
 import { i18n } from "i18next";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
-import isToday from "dayjs/plugin/isToday";
+import dayjs from "dayjs/esm";
+import utc from "dayjs/esm/plugin/utc";
+import isToday from "dayjs/esm/plugin/isToday";
 
 dayjs.extend(utc);
 dayjs.extend(isToday);

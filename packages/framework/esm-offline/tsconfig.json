@@ -8,9 +8,8 @@
     "strictNullChecks": true,
     "moduleResolution": "node",
     "declaration": true,
-    "skipLibCheck": true,
     "declarationDir": "dist",
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "lib": [
       "dom",
       "es5",
@@ -22,5 +21,6 @@
       "esnext"
     ]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["**/*.test.ts"]
 }

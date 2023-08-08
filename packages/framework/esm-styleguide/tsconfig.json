@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "declaration": true,
     "declarationDir": "dist",
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "lib": [
       "dom",
       "es5",

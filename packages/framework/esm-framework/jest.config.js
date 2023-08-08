@@ -11,7 +11,7 @@ module.exports = {
     "^dexie$": require.resolve("dexie"),
     "^uuid$": require.resolve("uuid"),
   },
-  setupFilesAfterEnv: ["<rootDir>/src/integration-tests/setup-tests.ts"],
+  setupFilesAfterEnv: ["<rootDir>/setup-tests.ts"],
   testEnvironment: "jsdom",
   testEnvironmentOptions: {
     url: "http://localhost/",

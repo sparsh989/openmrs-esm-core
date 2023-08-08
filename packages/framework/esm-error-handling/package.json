@@ -3,15 +3,15 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "An ES module to help with error handling",
-  "browser": "dist/openmrs-esm-error-handling.js",
-  "main": "src/index.ts",
+  "module": "dist/openmrs-esm-error-handling.js",
+  "types": "dist/index.d.ts",
   "source": true,
   "scripts": {
     "test": "jest --passWithNoTests",
-    "build": "webpack --mode=production",
-    "build:development": "webpack --mode development",
-    "analyze": "webpack --mode=production --env analyze=true",
-    "typescript": "tsc",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "build:development": "rollup -c",
+    "analyze": "rollup -c --environment NODE_ENV:production,ANALYZE:true",
+    "typescript": "tsc --noEmit",
     "lint": "eslint src --ext ts,tsx"
   },
   "keywords": [
@@ -40,6 +40,7 @@
     "@openmrs/esm-globals": "5.x"
   },
   "devDependencies": {
-    "@openmrs/esm-globals": "^5.1.0"
+    "@openmrs/esm-globals": "^5.1.0",
+    "rollup": "^3.27.2"
   }
 }

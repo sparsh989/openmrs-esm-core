@@ -82,7 +82,7 @@ function defaultSelect(extensions: Array<ConnectedExtension>) {
  * ```
  *
  */
-export function ExtensionSlot({
+export const ExtensionSlot: React.FC<ExtensionSlotProps> = ({
   name: extensionSlotName,
   extensionSlotName: legacyExtensionSlotName,
   select = defaultSelect,
@@ -90,7 +90,7 @@ export function ExtensionSlot({
   state,
   style,
   ...divProps
-}: ExtensionSlotProps) {
+}) => {
   if (children && state) {
     throw new Error(
       "Both children and state have been provided. If children are provided, the state must be passed as a prop to the `Extension` component."
@@ -141,4 +141,4 @@ export function ExtensionSlot({
         ))}
     </div>
   );
-}
+};

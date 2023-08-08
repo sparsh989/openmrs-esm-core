@@ -34,7 +34,7 @@ export function createGlobalStore<T>(
   if (available) {
     if (available.active) {
       console.error(
-        "Cannot override an existing store. Make sure that stores are only created once."
+        `Cannot override the existing store ${name}. Make sure that stores are only created once.`
       );
     } else {
       available.value.setState(initialState, true);
