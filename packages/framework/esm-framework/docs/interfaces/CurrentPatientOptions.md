@@ -6,9 +6,9 @@
 
 - **`CurrentPatientOptions`**
 
-  ↳ [`PatientWithFullResponse`](PatientWithFullResponse.md)
-
   ↳ [`OnlyThePatient`](OnlyThePatient.md)
+
+  ↳ [`PatientWithFullResponse`](PatientWithFullResponse.md)
 
 ## Table of contents
 
@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[packages/framework/esm-api/src/shared-api-objects/current-patient.ts:8](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/current-patient.ts#L8)
+[packages/framework/esm-emr-api/src/patient/current-patient.ts:12](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/patient/current-patient.ts#L12)

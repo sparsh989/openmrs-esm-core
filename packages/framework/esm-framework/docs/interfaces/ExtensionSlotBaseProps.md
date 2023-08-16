@@ -50,17 +50,17 @@ ___
 
 ### select
 
-▸ `Optional` **select**(`extensions`): [`ConnectedExtension`](ConnectedExtension.md)[]
+▸ `Optional` **select**(`extensions`): `ConnectedExtension`[]
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `extensions` | [`ConnectedExtension`](ConnectedExtension.md)[] |
+| `extensions` | `ConnectedExtension`[] |
 
 #### Returns
 
-[`ConnectedExtension`](ConnectedExtension.md)[]
+`ConnectedExtension`[]
 
 #### Defined in
 

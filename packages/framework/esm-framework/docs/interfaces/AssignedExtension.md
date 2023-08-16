@@ -19,7 +19,7 @@
 
 ### config
 
-• **config**: ``null`` \| [`ConfigObject`](ConfigObject.md)
+• **config**: ``null`` \| `ConfigObject`
 
 The extension's config. Note that this will be `null` until the slot is mounted.
 

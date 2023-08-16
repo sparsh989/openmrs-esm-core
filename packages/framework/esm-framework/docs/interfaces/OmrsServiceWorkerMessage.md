@@ -12,9 +12,9 @@
 
 - **`OmrsServiceWorkerMessage`**
 
-  ↳ [`OnImportMapChangedMessage`](OnImportMapChangedMessage.md)
-
   ↳ [`ClearDynamicRoutesMessage`](ClearDynamicRoutesMessage.md)
+
+  ↳ [`OnImportMapChangedMessage`](OnImportMapChangedMessage.md)
 
   ↳ [`RegisterDynamicRouteMessage`](RegisterDynamicRouteMessage.md)
 

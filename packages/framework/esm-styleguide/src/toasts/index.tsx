@@ -32,6 +32,7 @@ function isNotEmpty(description: React.ReactNode) {
 /**
  * Displays a toast notification in the UI.
  * @param toast The description of the toast to display.
+ * @category UI
  */
 export function showToast(toast: ToastDescriptor) {
   if (toast && isNotEmpty(toast.description)) {

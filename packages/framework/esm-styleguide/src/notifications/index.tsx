@@ -46,6 +46,7 @@ function isNotEmpty(description: React.ReactNode) {
 /**
  * Displays an inline notification in the UI.
  * @param notification The description of the notification to display.
+ * @category UI
  */
 export function showNotification(notification: NotificationDescriptor) {
   if (notification && isNotEmpty(notification.description)) {
@@ -89,8 +90,8 @@ function isNotActionableNotificationEmpty(subtitle: React.ReactNode) {
 /**
  * Displays an actionable notification in the UI.
  * @param notification The description of the notification to display.
+ * @category UI
  */
-
 export function showActionableNotification(
   notification: ActionableNotificationDescriptor
 ) {

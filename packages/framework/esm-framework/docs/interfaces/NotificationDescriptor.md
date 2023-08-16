@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/notifications/notification.component.tsx:11](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/notifications/notification.component.tsx#L11)
+packages/framework/esm-styleguide/dist/notifications/notification.component.d.ts:8
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/notifications/notification.component.tsx:13](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/notifications/notification.component.tsx#L13)
+packages/framework/esm-styleguide/dist/notifications/notification.component.d.ts:10
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/notifications/notification.component.tsx:10](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/notifications/notification.component.tsx#L10)
+packages/framework/esm-styleguide/dist/notifications/notification.component.d.ts:7
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/notifications/notification.component.tsx:12](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/notifications/notification.component.tsx#L12)
+packages/framework/esm-styleguide/dist/notifications/notification.component.d.ts:9
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/notifications/notification.component.tsx:14](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/notifications/notification.component.tsx#L14)
+packages/framework/esm-styleguide/dist/notifications/notification.component.d.ts:11
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/notifications/notification.component.tsx:15](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/notifications/notification.component.tsx#L15)
+packages/framework/esm-styleguide/dist/notifications/notification.component.d.ts:12

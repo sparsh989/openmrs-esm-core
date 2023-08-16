@@ -163,6 +163,7 @@ function handleEscKey(e: KeyboardEvent) {
  * @param props The optional props to provide to the extension.
  * @param onClose The optional notification to receive when the modal is closed.
  * @returns The dispose function to force closing the modal dialog.
+ * @category UI
  */
 export function showModal(
   extensionId: string,

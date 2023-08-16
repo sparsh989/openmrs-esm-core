@@ -287,7 +287,7 @@
 
 ### templateParams
 
-• `Optional` **templateParams**: [`TemplateParams`](../API.md#templateparams)
+• `Optional` **templateParams**: `TemplateParams`
 
 #### Defined in
 
