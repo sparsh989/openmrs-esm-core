@@ -15,6 +15,7 @@ const useAnalyzer = process.env.ANALYZE === "true";
 export default {
   input: {
     [basename(packageJson.module, ".js")]: "src/index.ts",
+    internal: "src/internal.ts",
     public: "src/public.ts",
   },
   output: [
