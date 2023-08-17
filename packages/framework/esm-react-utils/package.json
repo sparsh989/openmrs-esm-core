@@ -3,6 +3,7 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "React utilities for OpenMRS.",
+  "type": "module",
   "module": "dist/openmrs-esm-react-utils.js",
   "types": "dist/index.d.ts",
   "source": true,

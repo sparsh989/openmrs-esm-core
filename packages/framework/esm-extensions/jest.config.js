@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   transform: {
     "^.+\\.(j|t)sx?$": ["@swc/jest"],
   },

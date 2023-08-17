@@ -1,6 +1,6 @@
 module.exports = {
   transform: {
-    "^.+\\.tsx?$": ["@swc/jest"],
+    "^.+\\.(j|t)sx?$": ["@swc/jest"],
   },
   moduleNameMapper: {
     "@openmrs/esm-framework": "@openmrs/esm-framework/mock",

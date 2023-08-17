@@ -3,6 +3,7 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "A feature flag system for the OpenMRS Single-Spa framework.",
+  "type": "module",
   "module": "dist/openmrs-esm-feature-flags.js",
   "types": "dist/index.d.ts",
   "source": true,

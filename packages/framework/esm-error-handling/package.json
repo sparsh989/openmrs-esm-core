@@ -3,6 +3,7 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "An ES module to help with error handling",
+  "type": "module",
   "module": "dist/openmrs-esm-error-handling.js",
   "types": "dist/index.d.ts",
   "source": true,

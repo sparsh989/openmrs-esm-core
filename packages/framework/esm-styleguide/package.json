@@ -3,6 +3,7 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "The styleguide for OpenMRS SPA",
+  "type": "module",
   "module": "dist/openmrs-esm-styleguide.js",
   "types": "dist/index.d.ts",
   "source": true,
@@ -45,6 +46,8 @@
     "lodash-es": "^4.17.21"
   },
   "peerDependencies": {
+    "@openmrs/esm-framework": "*",
+    "@openmrs/esm-framework/dist/internal": "*",
     "@openmrs/esm-config": "5.x",
     "@openmrs/esm-extensions": "5.x",
     "@openmrs/esm-react-utils": "5.x",

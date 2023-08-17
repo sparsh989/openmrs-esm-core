@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   transform: {
     "\\.[jt]sx?$": "@swc/jest",
   },
@@ -9,7 +9,6 @@ module.exports = {
     "^@carbon/charts": "identity-obj-proxy",
     "@openmrs/esm-framework": "@openmrs/esm-framework/mock",
     "^lodash-es/(.*)$": "lodash/$1",
-    dexie: require.resolve("dexie"),
   },
   collectCoverageFrom: [
     "**/src/**/*.component.tsx",

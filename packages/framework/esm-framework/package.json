@@ -2,6 +2,7 @@
   "name": "@openmrs/esm-framework",
   "version": "5.1.0",
   "license": "MPL-2.0",
+  "type": "module",
   "module": "dist/openmrs-esm-framework.js",
   "types": "dist/index.d.ts",
   "source": true,

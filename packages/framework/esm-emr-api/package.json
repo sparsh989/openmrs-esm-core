@@ -3,6 +3,7 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "This javascript module provides core APIs for dealing with EMR concepts",
+  "type": "module",
   "module": "dist/openmrs-esm-emr-api.js",
   "types": "dist/index.d.ts",
   "source": true,

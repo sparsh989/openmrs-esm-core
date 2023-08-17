@@ -1,6 +1,6 @@
 module.exports = {
   transform: {
-    "^.+\\.tsx?$": ["@swc/jest"],
+    "^.+\\.(j|t)sx?$": ["@swc/jest"],
   },
   transformIgnorePatterns: [],
   moduleNameMapper: {

@@ -3,6 +3,7 @@
   "version": "5.1.0",
   "license": "MPL-2.0",
   "description": "The javascript module for interacting with the OpenMRS API",
+  "type": "module",
   "module": "dist/openmrs-esm-api.js",
   "types": "dist/index.d.ts",
   "source": true,
