@@ -26,6 +26,32 @@ export default {
     resolve(),
     commonjs(),
     clean({ targets: [dirname(packageJson.module)] }),
+    /**
+     * Custom Rollup plugin to rewrite imports for internal packages from, e.g.,
+     * "@openmrs/esm-config/src/public" -> "@openmrs/esm-config/dist/public"
+     *
+     * Basically, this is so that we can co-exist successfully with TypeDoc. In particular,
+     * the generated documentation should refer to the source code in the rolled-up module;
+     * however, at actual runtime, we should simply import the pre-compiled code from dist.
+     */
+    (() => {
+      const patternOpenmrsPackage = /^@openmrs\/esm-[\w-]+\/(src)\//;
+      return {
+        name: "openmrs-framework-import-rewrite-plugin",
+        /**
+         * @param {string} source
+         * @param {string | undefined} importer
+         */
+        resolveId(source) {
+          let m = source.match(patternOpenmrsPackage);
+          if (!m) {
+            return null;
+          } else {
+            return this.resolve(source.replace("/src/", "/dist/"));
+          }
+        },
+      };
+    })(),
     swc(),
     typescript({ emitDeclarationOnly: true }),
     useAnalyzer && bundleAnalyzer(),

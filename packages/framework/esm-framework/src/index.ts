@@ -149,7 +149,7 @@ export {
   subscribeNotificationShown,
   subscribePrecacheStaticDependencies,
   subscribeToastShown,
-} from "@openmrs/esm-globals/dist/public";
+} from "@openmrs/esm-globals/dist/public"; // we use dist here instead of src to avoid TS errors with the added globals
 export {
   type ClearDynamicRoutesMessage,
   type DynamicOfflineData,

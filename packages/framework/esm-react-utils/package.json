@@ -11,7 +11,7 @@
     "build": "rollup -c --environment NODE_ENV:production",
     "build:development": "rollup -c",
     "analyze": "rollup -c --environment NODE_ENV:production,ANALYZE:true",
-    "lint": "eslint src"
+    "lint": "eslint src --ext ts,tsx"
   },
   "keywords": [
     "openmrs",
