@@ -4,7 +4,7 @@ import {
   getExtensionInternalStore,
   useStore,
   useStoreWithActions,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 import { Button } from "@carbon/react";
 import { Close } from "@carbon/react/icons";
 import { Portal } from "./portal";

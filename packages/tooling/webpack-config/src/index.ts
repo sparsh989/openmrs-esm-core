@@ -263,10 +263,7 @@ export default (
         exposes: {
           "./start": srcFile,
         },
-        shared: [
-          ...Object.keys(peerDependencies),
-          "@openmrs/esm-framework/src/internal",
-        ].reduce((obj, depName) => {
+        shared: [...Object.keys(peerDependencies)].reduce((obj, depName) => {
           obj[depName] = {
             requiredVersion: peerDependencies[depName] ?? false,
             singleton: true,
@@ -307,7 +304,7 @@ export default (
     resolve: {
       extensions: [".tsx", ".ts", ".jsx", ".js", ".scss", ".json"],
       alias: {
-        "@openmrs/esm-framework": "@openmrs/esm-framework/src/internal",
+        "@openmrs/esm-framework": "@openmrs/esm-framework/dist/internal",
       },
     },
     ...overrides,

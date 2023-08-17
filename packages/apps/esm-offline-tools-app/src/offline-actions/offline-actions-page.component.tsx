@@ -6,7 +6,7 @@ import {
   useConnectivity,
   useLayoutType,
   useStore,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 import { Button } from "@carbon/react";
 import { Renew } from "@carbon/react/icons";
 import { useTranslation } from "react-i18next";

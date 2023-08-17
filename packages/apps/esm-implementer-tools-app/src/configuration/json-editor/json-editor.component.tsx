@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import {
   temporaryConfigStore,
   useStore,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 import { Button } from "@carbon/react";
 import AceEditor from "react-ace";
 import style from "./json-editor.scss";

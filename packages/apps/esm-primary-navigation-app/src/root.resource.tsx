@@ -2,7 +2,7 @@ import {
   getCurrentUser,
   getSynchronizationItemsFor,
   openmrsObservableFetch,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 import { mergeMap } from "rxjs/operators";
 import { userPropertyChange } from "./constants";
 

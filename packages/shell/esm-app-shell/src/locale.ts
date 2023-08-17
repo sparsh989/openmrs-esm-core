@@ -6,7 +6,7 @@ import merge from "lodash-es/merge";
 import {
   getConfigInternal,
   importDynamic,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 
 export function setupI18n() {
   window.i18next = i18next.default || i18next;

@@ -265,7 +265,7 @@ export {
   showNotification,
   showToast,
   unsetLeftNav,
-} from "@openmrs/esm-styleguide/dist/public";
+} from "@openmrs/esm-styleguide";
 export {
   type DateInput,
   type FormatDateMode,

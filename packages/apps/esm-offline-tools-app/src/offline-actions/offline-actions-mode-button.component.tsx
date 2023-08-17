@@ -5,7 +5,7 @@ import { Network_3 } from "@carbon/react/icons";
 import {
   getCurrentOfflineMode,
   setCurrentOfflineMode,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 import styles from "./offline-actions-mode-button.scss";
 
 function doNotCloseMenu(ev: React.SyntheticEvent) {

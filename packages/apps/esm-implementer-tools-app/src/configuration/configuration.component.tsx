@@ -23,7 +23,7 @@ import {
   temporaryConfigStore,
   useStore,
   useStoreWithActions,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 import { ConfigTree } from "./interactive-editor/config-tree.component";
 import { Description } from "./interactive-editor/description.component";
 import { implementerToolsStore, ImplementerToolsStore } from "../store";

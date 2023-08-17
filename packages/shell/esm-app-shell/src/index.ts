@@ -1,6 +1,6 @@
 import "@openmrs/esm-styleguide/dist/openmrs-esm-styleguide.css";
 import "import-map-overrides";
-import type { SpaConfig } from "@openmrs/esm-framework/src/internal";
+import type { SpaConfig } from "@openmrs/esm-framework";
 
 export function setupPaths(config: SpaConfig) {
   let error = false;

@@ -3,7 +3,7 @@ import {
   getFullSynchronizationItems,
   getSynchronizationItems,
   SyncItem,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 import uniq from "lodash-es/uniq";
 import useSWR from "swr";
 

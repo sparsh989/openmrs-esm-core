@@ -1,7 +1,7 @@
 import {
   openmrsFetch,
   queueSynchronizationItemFor,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 import { userPropertyChange } from "../../constants";
 
 export type PostUserProperties = (

@@ -267,10 +267,7 @@ export {
   validator,
   validators,
 } from "./index";
-export {
-  backendDependencies,
-  setupApiModule,
-} from "@openmrs/esm-api/src/index";
+export { backendDependencies, setupApiModule } from "@openmrs/esm-api";
 export {
   type ConfigExtensionStore,
   type ConfigExtensionStoreElement,
@@ -291,12 +288,12 @@ export {
   implementerToolsConfigStore,
   processConfig,
   temporaryConfigStore,
-} from "@openmrs/esm-config/src/index";
+} from "@openmrs/esm-config";
 export {
   getCurrentImportMap,
   preloadImport,
   slugify,
-} from "@openmrs/esm-dynamic-loading/src/index";
+} from "@openmrs/esm-dynamic-loading";
 export {
   type ExtensionInfo,
   type ExtensionInstance,
@@ -309,20 +306,20 @@ export {
   getExtensionRegistrationFrom,
   reset,
   updateInternalExtensionStore,
-} from "@openmrs/esm-extensions/src/index";
+} from "@openmrs/esm-extensions";
 export {
   type FeatureFlag,
   type FeatureFlagsStore,
   featureFlagsStore,
   setFeatureFlag,
   subscribeToFeatureFlag,
-} from "@openmrs/esm-feature-flags/src/index";
+} from "@openmrs/esm-feature-flags";
 export {
   dispatchActionableNotificationShown,
   dispatchConnectivityChanged,
   dispatchNotificationShown,
   dispatchPrecacheStaticDependencies,
-} from "@openmrs/esm-globals/dist/index";
+} from "@openmrs/esm-globals";
 export {
   type OfflineSynchronizationStore,
   type ProcessSyncItem,
@@ -334,7 +331,7 @@ export {
   registerOmrsServiceWorker,
   runSynchronization,
   setCurrentOfflineMode,
-} from "@openmrs/esm-offline/src/index";
+} from "@openmrs/esm-offline";
 export {
   type ComponentConfig,
   ComponentContext,
@@ -344,7 +341,7 @@ export {
   openmrsComponentDecorator,
   useExtensionSlot,
   useForceUpdate,
-} from "@openmrs/esm-react-utils/src/index";
+} from "@openmrs/esm-react-utils";
 export {
   Breakpoint,
   integrateBreakpoints,

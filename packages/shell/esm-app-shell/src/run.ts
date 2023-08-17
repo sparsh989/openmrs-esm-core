@@ -28,7 +28,12 @@ import {
   OpenmrsRoutes,
   getCurrentImportMap,
   importDynamic,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
+import {
+  setupBranding,
+  setupIcons,
+  setupLogo,
+} from "@openmrs/esm-styleguide/dist/shell";
 import {
   finishRegisteringAllApps,
   registerApp,
@@ -351,6 +356,9 @@ export function run(configUrls: Array<string>, offline: boolean) {
   const closeLoading = showLoadingSpinner();
   const provideConfigs = createConfigLoader(configUrls);
 
+  setupLogo();
+  setupIcons();
+  setupBranding();
   integrateBreakpoints();
   showToasts();
   showModals();

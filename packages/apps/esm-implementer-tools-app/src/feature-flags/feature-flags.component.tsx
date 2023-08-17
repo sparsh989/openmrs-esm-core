@@ -16,7 +16,7 @@ import { registerFeatureFlag, useStore } from "@openmrs/esm-framework";
 import {
   featureFlagsStore,
   setFeatureFlag,
-} from "@openmrs/esm-framework/src/internal";
+} from "@openmrs/esm-framework/dist/internal";
 
 export function FeatureFlags() {
   const { flags } = useStore(featureFlagsStore);

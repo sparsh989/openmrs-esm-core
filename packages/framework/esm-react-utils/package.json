@@ -54,7 +54,8 @@
     "i18next": "19.x",
     "react": "18.x",
     "react-dom": "18.x",
-    "react-i18next": "11.x"
+    "react-i18next": "11.x",
+    "single-spa": "5.x"
   },
   "devDependencies": {
     "@openmrs/esm-api": "^5.1.0",

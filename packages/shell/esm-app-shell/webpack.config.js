@@ -36,11 +36,9 @@ const openmrsEnvironment = process.env.OMRS_ENV || process.env.NODE_ENV || "";
 const openmrsOffline = process.env.OMRS_OFFLINE !== "disable";
 const openmrsDefaultLocale = process.env.OMRS_ESM_DEFAULT_LOCALE || "en";
 const openmrsImportmapDef = process.env.OMRS_ESM_IMPORTMAP;
-const openmrsImportmapUrl =
-  process.env.OMRS_ESM_IMPORTMAP_URL || `${openmrsPublicPath}/importmap.json`;
+const openmrsImportmapUrl = process.env.OMRS_ESM_IMPORTMAP_URL; // || `${openmrsPublicPath}/importmap.json`;
 const openmrsRoutesDef = process.env.OMRS_ROUTES;
-const openmrsRoutesUrl =
-  process.env.OMRS_ROUTES_URL || `${openmrsPublicPath}/routes.registry.json`;
+const openmrsRoutesUrl = process.env.OMRS_ROUTES_URL; // || `${openmrsPublicPath}/routes.registry.json`;
 const openmrsCoreApps =
   process.env.OMRS_ESM_CORE_APPS_DIR || resolve(__dirname, "../../apps");
 const openmrsConfigUrls = (process.env.OMRS_CONFIG_URLS || "")
@@ -267,7 +265,7 @@ module.exports = (env, argv = {}) => {
         url: false,
       },
       alias: {
-        "@openmrs/esm-framework": "@openmrs/esm-framework/src/internal",
+        "@openmrs/esm-framework": "@openmrs/esm-framework/dist/internal",
       },
     },
     plugins: [
@@ -345,10 +343,10 @@ module.exports = (env, argv = {}) => {
           swDest: "service-worker.js",
           maximumFileSizeToCacheInBytes:
             mode === production ? undefined : Number.MAX_SAFE_INTEGER,
-          additionalManifestEntries: [
-            { url: openmrsImportmapUrl, revision: null },
-            { url: openmrsRoutesUrl, revision: null },
-          ],
+          // additionalManifestEntries: [
+          //   { url: openmrsImportmapUrl, revision: null },
+          //   { url: openmrsRoutesUrl, revision: null },
+          // ],
         }),
     ].filter(Boolean),
     ignoreWarnings: [/.*InjectManifest has been called multiple times.*/],
