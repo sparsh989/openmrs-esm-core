@@ -3949,6 +3949,7 @@ __metadata:
     react: 18.x
     react-dom: 18.x
     react-i18next: 11.x
+    single-spa: 5.x
   languageName: unknown
   linkType: soft
 
@@ -3970,6 +3971,7 @@ __metadata:
   dependencies:
     "@carbon/charts": ^1.6.3
     "@carbon/react": ^1.12.0
+    "@openmrs/esm-config": ^5.1.0
     "@openmrs/esm-extensions": ^5.1.0
     "@openmrs/esm-react-utils": ^5.1.0
     "@openmrs/esm-state": ^5.1.0
@@ -3987,6 +3989,10 @@ __metadata:
     rollup-plugin-svg: ^2.0.0
     rxjs: ^6.5.3
   peerDependencies:
+    "@openmrs/esm-config": 5.x
+    "@openmrs/esm-extensions": 5.x
+    "@openmrs/esm-react-utils": 5.x
+    "@openmrs/esm-state": 5.x
     i18next: 19.x
     react: 18.x
     react-dom: 18.x

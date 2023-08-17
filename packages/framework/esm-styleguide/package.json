@@ -45,6 +45,7 @@
     "lodash-es": "^4.17.21"
   },
   "peerDependencies": {
+    "@openmrs/esm-config": "5.x",
     "@openmrs/esm-extensions": "5.x",
     "@openmrs/esm-react-utils": "5.x",
     "@openmrs/esm-state": "5.x",
@@ -54,6 +55,7 @@
     "rxjs": "6.x"
   },
   "devDependencies": {
+    "@openmrs/esm-config": "^5.1.0",
     "@openmrs/esm-extensions": "^5.1.0",
     "@openmrs/esm-react-utils": "^5.1.0",
     "@openmrs/esm-state": "^5.1.0",
